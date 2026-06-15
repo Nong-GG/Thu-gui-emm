@@ -17,7 +17,7 @@ body{
     display:flex;
     justify-content:center;
     align-items:center;
-    background:linear-gradient(135deg,#ffd6e7,#fff5f7);
+    background:url('anh.jpg') center center/cover no-repeat;
     font-family:Arial,sans-serif;
     overflow:hidden;
 }
@@ -49,7 +49,8 @@ body{
     width:90%;
     left:5%;
     top:15px;
-    background:white;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter: blur(5px);
     border-radius:10px;
     padding:20px;
     box-shadow:0 5px 20px rgba(0,0,0,.15);
@@ -104,14 +105,7 @@ p{
     }
 }
 
-.music{
-    position:fixed;
-    bottom:15px;
-    left:50%;
-    transform:translateX(-50%);
-    font-size:14px;
-    color:#666;
-}
+
 </style>
 </head>
 
@@ -140,9 +134,7 @@ p{
     </div>
 </div>
 
-<div class="music">
-🎵 Nhạc nền: Em luôn ở trong tâm trí anh
-</div>
+
 
 <script>
 function openLetter(){
